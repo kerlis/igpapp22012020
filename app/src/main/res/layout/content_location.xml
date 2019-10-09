@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="AJUSTES  NOTIFICACIONES"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/titulo"
+             android:id="@+id/bloque01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grupo01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <RadioButton
+                    android:id="@+id/nonotificar"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No nootificar"
+                    android:paddingRight="2dp"/>
+                <RadioButton
+                    android:id="@+id/notificar"
+                    android:textSize="13dp"
+
+                    android:layout_width="wrap_content"
+                    androiyout_height="wrap_content"
+                    android:text="Notificar"
+                    android:paddingRight="2dp"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/bloque01"
+            android:id="@+id/bloque1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                 android:id="@+id/grupo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <RadioButton
+                    android:id="@+id/vibrar"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vibrar al notificar"
+                    android:paddingRight="2dp"/>
+                <RadioButton
+                    android:id="@+id/novibrar"
+                    android:textSize="13dp"
+
+                    android:layout_width="wrap_content"
+                    androiyout_height="wrap_content"
+                    android:text="Sonido al notificar"
+                    android:paddingRight="2dp"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/bloque1"
+            android:id="@+id/bloquesonido"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/grupo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+                <RadioButton
+                    android:id="@+id/alarma"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma"
+                    android:paddingRight="2dp"/>
+                <RadioButton
+                    android:id="@+id/sonidonotificar"
+                    android:textSize="13dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notificación"
+                    android:paddingRight="2dp"/>
+
+
+                <RadioButton
+                    android:id="@+id/sonidopersonalizado"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sonido Personalizado"
+                    android:paddingRight="2dp"/>
+
+            </RadioGroup>
+
+            <RelativeLayout android:layout_width="match_parent"
+                 android:layout_height="75dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/grupo2">
+
+                <TableLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_gravity="center">
+
+                        <RelativeLayout android:layout_width="wrap_content"
+                            android:gravity="right"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/picksound"
+                                android:layout_width="150dp"
+                                  android:layout_height="wrap_content"
+                                 android:text="elegir sonido" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout android:layout_width="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="1">
+
+                            <TextView android:layout_width="wrap_content"
+                                 android:text="fdghdfghdfgh"
+                                 android:layout_height="wrap_content"
+                                android:id="@+id/ringtoneelegido"/>
+
+                        </RelativeLayout>
+
+
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/bloquesonido"
+            android:id="@+id/bloqueprueba"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:id="@+id/texto5"
+                android:textAlignment="center"
+                android:text="PRUEBA LA NOTIFICACIÓN"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:id="@+id/probar"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/texto5"
+                android:background="@color/verdeigp"
+                android:textColor="@color/white"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                android:text="PROBAR NOTIFICACIÓN" />
+
+
+            <Button
+                android:id="@+id/vervaloresdeconfiguracion"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/probar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/verdeigp"
+                android:text="VER VALORES"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

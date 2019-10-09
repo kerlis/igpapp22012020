@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="3dp"
+    android:layout_height="550dp"
+    android:orientation="horizontal"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="550dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/blanco">
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:background="@color/blanco"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:backgroundTint="@color/buttoninfocolor"
+                android:layout_marginRight="11dp"
+                android:background="@color/buttoninfocolor"
+                android:layout_marginLeft="11dp"
+                android:layout_marginBottom="11dp"
+                 android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/texto"
+                    android:layout_alignParentLeft="true"
+                    style="@style/titulolistadosismos2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:textColor="@color/blanco"
+                    android:layout_below="@+id/encabezado2"
+                    android:text="Glosario" />
+
+                <Button
+                    android:id="@+id/close"
+                    style="@style/iconocloseglosario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/encabezado2"
+                    android:layout_alignParentRight="true"
+                    android:text="x   "
+                    android:textAlignment="viewEnd" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="MAGNITUD"
+                    android:textColor="@color/blanco"
+                     android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+
+
+                <Button
+                    android:id="@+id/sharebutton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/magnitudicon"
+                    android:elevation="7dp"
+                    android:textSize="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_get_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+
+                    <TextView
+                        android:id="@+id/texto1"
+                        style="@style/textoglosarioultimosismo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Valor que indica la cantidad de energía liberada por el sismo. Para  sismos con magnitud menor o igual a 6.5 se considera la escala de Magnitud Local (ML), también conocida como escala de Richter. Para sismos con magnitudes mayores, se considera la escala de magnitud momento (Mw)," />
+
+
+                    <RelativeLayout
+                        android:layout_below="@+id/texto1"
+                        android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                        android:id="@+id/intensidad13"
+                        android:orientation="horizontal">
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                 android:layout_alignParentLeft="true"
+                                android:layout_marginRight="0dp"
+                                android:id="@+id/ccamarillo3" >
+                                <ImageView
+                                    android:id="@+id/icono13"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/circuloverde"
+                                    android:background="@color/blanco"
+                                    android:padding="0dp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/descripcion13"
+                                style="@style/texto_glosario"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_toRightOf="@+id/ccamarillo3"
+                                android:text="@string/PRIMERA_TEXT" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/intensidad13"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/intensidad3"
+                        android:orientation="horizontal">
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/ccverde3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginRight="0dp"
+                           >
+
+                                <ImageView
+                                    android:id="@+id/icono23"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="3dp"
+                                    android:background="@color/blanco"
+                                    android:padding="0dp"
+                                    android:src="@drawable/circuloamarillo" />
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/descripcion23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/ccverde3"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/SEGUNDA_TEXT"
+                                style="@style/texto_glosario" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/intensidad3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                 android:layout_alignParentLeft="true"
+                                android:layout_marginRight="0dp"
+                                android:id="@+id/ccrojo3" >
+                                <ImageView
+                                    android:id="@+id/icono33"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/circulorojo"
+                                    android:background="@color/blanco"
+                                    android:padding="0dp" />
+                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/descripcion33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/ccrojo3"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/TERCERA_TEXT"
+                                style="@style/texto_glosario" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="FECHa  "
+                    android:textColor="@color/blanco"
+                    android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+                <Button
+                    android:id="@+id/sharebutton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/fechaicon"
+                    android:layout_gravity="right"
+                    android:elevation="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:textSize="8dp" />
+                <RelativeLayout
+                    android:id="@+id/btn_get_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textoglosarioultimosismo"
+
+                    android:text="Indica el día, mes y año de ocurrencia del sismo."
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="HORA LOCAL  "
+                    android:textColor="@color/blanco"
+                    android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+                <Button
+                     android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/timeicon"
+                    android:layout_gravity="right"
+                    android:elevation="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:textSize="8dp" />
+                <RelativeLayout
+                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+
+                    <TextView
+                        style="@style/textoglosarioultimosismo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Indica la hora local (Perú) de ocurrencia del sismo (Hora:minuto:segundo)." />
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="REFERENCIA  "
+                    android:textColor="@color/blanco"
+                    android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/referenciaicon"
+                    android:layout_gravity="right"
+                    android:elevation="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:textSize="8dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textoglosarioultimosismo"
+
+                        android:text="Indica la ubicación del epicentro del sismo tomando como referencia, la localidad mas cercana al mismo (Plaza de armas). Los parámetros usados son azimut y distancia en km."
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="LATITUD  "
+                    android:textColor="@color/blanco"
+                    android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/localizacionicon"
+                    android:layout_gravity="right"
+                    android:elevation="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:textSize="8dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textoglosarioultimosismo"
+
+                        android:text="Indica la distancia angular entre la linea ecuatorial y un punto cualquiera sobre la tierra. Define una de las coordenadas en grados de epicentro."
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="LONGITUD  "
+                    android:textColor="@color/blanco"
+                    android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/localizacionicon"
+                    android:layout_gravity="right"
+                    android:elevation="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:textSize="8dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textoglosarioultimosismo"
+
+                        android:text="Indica la distancia angular entre un punto cualquiera sobre la superficie de la Tierra y el meridiano que se tome como 0º. Define una de las coordenadas en grados del epicentro."
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="PROFUNDIDAD  "
+                    android:textColor="@color/blanco"
+                    android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/profundidadicon"
+                    android:layout_gravity="right"
+                    android:elevation="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:textSize="8dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textoglosarioultimosismo"
+
+                        android:text="Define la profundidad por debajo de la superficie de la Tierra en la cual se encuentra el foco sísmico o inicio de la ruptura. Valor expresado en kilómetros."
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/buttoninfocolor"
+                    android:text="INTENSIDAD  "
+                    android:textColor="@color/blanco"
+                    android:elevation="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="43dp"
+                    android:src="@drawable/edificio23" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/glosariobutton"
+                    android:background="@drawable/intensidadicon"
+                    android:layout_gravity="right"
+                    android:elevation="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="43dp"
+                    android:textSize="8dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shapeborder"
+                    android:text="Quick-Pay"
+                    android:textColor="@android:color/white" >
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/textoglosarioultimosismo"
+
+                        android:text="Define la intensidad de sacudimiento del suelo en base a la percepción de las personas, daños estructurales observados y cambios en la naturaleza. La escala utilizada es la de Mercal Modificada. Los valores son dados en números romanos para las localidades en las cuales se llegó a evaluar la intensidad."
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

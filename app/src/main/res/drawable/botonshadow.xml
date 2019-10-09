@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="linear"
+                android:angle="-90"
+                android:startColor="#19000000"
+            android:endColor="#00000000" />
+            <stroke android:width="3px" android:color="#24000000" />
+            <solid android:color="@color/buttoninfocolor"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/glosariowhite"
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"/>
+
+
+
+</layer-list>
