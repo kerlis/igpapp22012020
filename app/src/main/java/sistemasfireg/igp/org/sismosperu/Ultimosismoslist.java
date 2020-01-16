@@ -269,6 +269,7 @@ public class Ultimosismoslist extends Activity {
         mDatabase.orderByKey().limitToLast(20).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+
                 messages objetosismo = dataSnapshot.getValue(messages.class);
                 objetosismos.add(objetosismo);
                 int iSwapCount = objetosismos.size() - 1;
@@ -291,6 +292,9 @@ public class Ultimosismoslist extends Activity {
                 {
                     Collections.swap(objetosismos, iPosition, iPosition - 1);
                     iPosition = iPosition - 1;
+
+
+
                  }
                 lv.setAdapter(adapter);
             }

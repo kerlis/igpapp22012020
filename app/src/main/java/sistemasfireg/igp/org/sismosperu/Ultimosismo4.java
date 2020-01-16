@@ -167,7 +167,7 @@ public class Ultimosismo4 extends FragmentActivity implements OnMapReadyCallback
         //canales de notificacion
         crear_canal_sonido_alarma();
         crear_canal_sonido_notificacion();
-        crear_canal_sin_sonido_con_vibracion();
+       crear_canal_sin_sonido_con_vibracion();
     }
 
     private void crear_canal_sonido_alarma() {
@@ -219,7 +219,7 @@ public class Ultimosismo4 extends FragmentActivity implements OnMapReadyCallback
             int importance = NotificationManager.IMPORTANCE_HIGH;
             NotificationChannel channel = new NotificationChannel(channelId, name, importance);
             channel.setDescription(description);
-            channel.setVibrationPattern(new long[]{50, 100, 50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100, 50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100,50, 100});
+            channel.setVibrationPattern(new long[]{30, 120, 30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120, 30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120, 120,30, 120, 30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120});
             channel.enableVibration(true);
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);

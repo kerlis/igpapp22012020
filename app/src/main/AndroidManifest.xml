@@ -171,6 +171,7 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
         <service android:name=".Messagingservicef">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -307,7 +308,7 @@
         <activity
             android:name=".Configuraciones"
             android:screenOrientation="portrait" />
-        -
+
         <activity
             android:name=".Ultimosismo4"
             android:screenOrientation="portrait" />

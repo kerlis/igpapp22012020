@@ -43,13 +43,79 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
         registerToken(token);
         ver();
         contador();
-        createNotificationChannel();
+       // createNotificationChannel();
        valoresconfiguracion();
 
-
+        crear_canal_sonido_alarma();
+        crear_canal_sonido_notificacion();
+        crear_canal_sin_sonido_con_vibracion();
     }
 
+
+
+    private void crear_canal_sonido_alarma() {
+        String channelId = getString(R.string.canal_sonido_alarmas_sismos_id);
+        Uri sonido_notificacion_android = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.alarmasonido);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.canal_sonido_alarmas_sismos_id_nombre);
+            String description = getString(R.string.canal_sonido_alarmas_sismos_id_descripcion);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(channelId, name, importance);
+            channel.setDescription(description);
+
+            AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .setUsage(AudioAttributes.USAGE_NOTIFICATION)
+                    .build();
+            channel.setSound(sonido_notificacion_android, audioAttributes);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+    private void crear_canal_sonido_notificacion() {
+        String channelId = getString(R.string.canal_sonido_notificacion_sismos_id);
+        Uri sonido_notificacion_android = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.beep2);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.canal_sonido_notificacion_sismos_nombre);
+            String description = getString(R.string.canal_sonido_notificacion_sismos_descripcion);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(channelId, name, importance);
+            channel.setDescription(description);
+
+            AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .setUsage(AudioAttributes.USAGE_NOTIFICATION)
+                    .build();
+            channel.setSound(sonido_notificacion_android, audioAttributes);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+    private void crear_canal_sin_sonido_con_vibracion() {
+        String channelId = getString(R.string.canal_sin_sonido_con_vibracion_sismos_id);
+        Uri sonido_notificacion_android = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.alarmasonido);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.canal_sin_sonido_con_vibracion_sismos_nombre);
+            String description = getString(R.string.canal_sin_sonido_con_vibracion_sismos_descripcion);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(channelId, name, importance);
+            channel.setDescription(description);
+            channel.setVibrationPattern(new long[]{30, 120, 30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120, 30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120, 120,30, 120, 30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120,30, 120});
+            channel.enableVibration(true);
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+
+
+
     private void createNotificationChannel() {
+
+        Log.d("service", "processing grabando");
+
 /*
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
@@ -230,9 +296,9 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
             FileOutputStream fileOutputStream = openFileOutput(file_namex, MODE_PRIVATE);
             fileOutputStream.write(Message5.getBytes());
 
-            // FirebaseMessaging.getInstance().subscribeToTopic(Message5);
+            FirebaseMessaging.getInstance().subscribeToTopic(Message5);
 
-           FirebaseMessaging.getInstance().subscribeToTopic("SISMOSANDROIDDOSTRESKAI55");
+            // FirebaseMessaging.getInstance().subscribeToTopic("SISMOSANDROIDDOSTRESKAI514");
 
 
 

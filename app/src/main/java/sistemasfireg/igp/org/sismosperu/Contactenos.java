@@ -290,7 +290,11 @@ public class Contactenos extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             public void run() {
                 spinner.setVisibility(View.GONE);
-                Toast.makeText(getApplicationContext(),   dato , Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),  dato , Toast.LENGTH_LONG).show();
+
+
+                Intent intent = new Intent(Contactenos.this, Ultimosismo4.class);
+                startActivity(intent);
             }
         });
     }
@@ -347,9 +351,16 @@ public class Contactenos extends AppCompatActivity {
         if(requestCode == 10 && resultCode == RESULT_OK){
 
             progress = new ProgressDialog(Contactenos.this);
-           progress.setTitle("Cargando Archivo");
+
+            //ProgressDialog progressDialog = new ProgressDialog(Contactenos.this,R.style.AppCompatAlertDialogStyle);
+
+            progress= new ProgressDialog(Contactenos.this,R.style.MyAlertDialogStyle);
+
+
+
+            progress.setTitle("Cargando Archivo");
             progress.setMessage("Espere por favor...");
-            progress.show();
+             progress.show();
 
             Thread t = new Thread(new Runnable() {
                 @Override
