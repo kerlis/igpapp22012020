@@ -98,7 +98,11 @@ public class SplashScreen extends Activity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent7 = new Intent(SplashScreen.this,Ultimosismo4.class);
+                   // Intent intent7 = new Intent(SplashScreen.this,Ultimosismo4.class);
+
+
+                    Intent intent7 = new Intent(SplashScreen.this,Alarmatemprana.class);
+
                     // Intent intent7 = new Intent(SplashScreen.this,Getlocationandmore.class);
                     startActivity(intent7);
                 }
@@ -111,7 +115,7 @@ public class SplashScreen extends Activity {
 
     }
 
-        @Override
+    @Override
     protected void onPause() {
         // TODO Auto-generated method stub
         super.onPause();

@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="sistemasfireg.igp.org.sismosperu"
     tools:node="replace">
-
-    <!--<uses-sdk
+    <!--
+    <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="26" />
     -->
@@ -12,31 +12,17 @@
     <uses-permission android:name="com.htc.launcher.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="com.htc.launcher.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
-
-    <!-- for htc -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
     <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
-
-    <!-- for sony -->
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
     <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
-    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
-
-    <!-- for apex -->
-    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
-
-    <!-- for solid -->
-    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
-
-    <!-- for huawei -->
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
     <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
     <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
-    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
-
-    <!-- for ZUK -->
-    <uses-permission android:name="android.permission.READ_APP_BADGE" />
-
-    <!-- for OPPO -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
     <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
@@ -82,6 +68,8 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:supportsRtl">
+        <activity android:name=".Alarmatemprana"></activity>
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="sistemasfireg.igp.org.sismosperu"
@@ -119,7 +107,6 @@
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyChRE4B12A8MFwNc4ftdxivF5hXi-e7b3o" />
-
         <!--
             <receiver
             android:name=".InicioReceiver"
@@ -130,7 +117,6 @@
             </intent-filter>
         </receiver>
         -->
-
         <activity
             android:name=".Glosarioestatico"
             android:screenOrientation="portrait" />
@@ -171,7 +157,6 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-
         <service android:name=".Messagingservicef">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -191,7 +176,6 @@
                 <action android:name="android.intent.action.STOP_SERVICE" />
             </intent-filter>
         </receiver>
-
         <!--
         <receiver android:name=".DeviceBootReceiver"
             android:enabled="false" android:exported="false">
@@ -204,8 +188,6 @@
             </intent-filter>
         </receiver>
         -->
-
-
         <!--
         <receiver android:name=".DeviceBootReceiver"
             android:enabled="false" android:exported="false">
@@ -214,8 +196,6 @@
              </intent-filter>
         </receiver>
         -->
-
-
         <!--
              <receiver
                  android:name=".InicioReceiver"
@@ -273,7 +253,6 @@
             </intent-filter>
         </service>
         -->
-
         <receiver
             android:name=".GcmBroadcastReceiver"
             android:exported="true"
@@ -291,7 +270,6 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/azulbackground" />
-
         <!--
         <service
             android:name="sistemasfireg.igp.org.sismosperu.Firebasemessagingthree"
@@ -301,19 +279,21 @@
             </intent-filter>
         </service>
         -->
-
         <activity
             android:name=".Configurar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Configuraciones"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".Ultimosismo4"
             android:screenOrientation="portrait" />
         <activity android:name=".Contactenos" />
-        <activity android:name=".Irposter"></activity>
+        <activity android:name=".Irposter" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>

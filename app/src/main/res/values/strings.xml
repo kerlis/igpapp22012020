@@ -27,20 +27,20 @@
     </string>
     -->
 
-    <string name="canal_sonido_alarmas_sismos_id" >canal_sonido_alarmas_sismos_id</string>
-    <string name="canal_sonido_alarmas_sismos_id_nombre" >canal_sonido_alarmas_sismos_id_nombre</string>
+    <string name="canal_sonido_alarmas_sismos_id">canal_sonido_alarmas_sismos_id</string>
+    <string name="canal_sonido_alarmas_sismos_id_nombre">canal_sonido_alarmas_sismos_id_nombre</string>
     <string name="canal_sonido_alarmas_sismos_id_descripcion" translatable="false">canal_sonido_alarmas_sismos_id_descripcion</string>
 
-    <string name="canal_sonido_notificacion_sismos_id" >canal_sonido_notificacion_sismos_id</string>
-    <string name="canal_sonido_notificacion_sismos_nombre" >canal_sonido_notificacion_sismos_nombre</string>
+    <string name="canal_sonido_notificacion_sismos_id">canal_sonido_notificacion_sismos_id</string>
+    <string name="canal_sonido_notificacion_sismos_nombre">canal_sonido_notificacion_sismos_nombre</string>
     <string name="canal_sonido_notificacion_sismos_descripcion" translatable="false">canal_sonido_notificacion_sismos_descripcion</string>
 
-    <string name="canal_sonido_personalizado_sismos_id" >canal_sonido_personalizado_sismos_id</string>
-    <string name="canal_sonido_personalizado_sismos_nombre" >canal_sonido_personalizado_sismos_nombre</string>
+    <string name="canal_sonido_personalizado_sismos_id">canal_sonido_personalizado_sismos_id</string>
+    <string name="canal_sonido_personalizado_sismos_nombre">canal_sonido_personalizado_sismos_nombre</string>
     <string name="canal_sonido_personalizado_sismos_descripcion" translatable="false">canal_sonido_personalizado_sismos_descripcion</string>
 
-    <string name="canal_sin_sonido_con_vibracion_sismos_id" >canal_sin_sonido_con_vibracion_sismos_id</string>
-    <string name="canal_sin_sonido_con_vibracion_sismos_nombre" >canal_sin_sonido_con_vibracion_sismos_nombre</string>
+    <string name="canal_sin_sonido_con_vibracion_sismos_id">canal_sin_sonido_con_vibracion_sismos_id</string>
+    <string name="canal_sin_sonido_con_vibracion_sismos_nombre">canal_sin_sonido_con_vibracion_sismos_nombre</string>
     <string name="canal_sin_sonido_con_vibracion_sismos_descripcion" translatable="false">canal_sin_sonido_con_vibracion_sismos_descripcion</string>
 
 
